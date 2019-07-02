@@ -1,0 +1,106 @@
+SETTING UP NVIDIA CUDA ON UBUNTU 16.04
+=======================================
+** Install nvidia drivers
+--------------------------
+sudo apt purge nvidia-*
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+
+** Install CUDA supported driver
+--------------------------------
+sudo apt-get install nvidia-367
+
+
+** Fixing Unity if it doesn't boot (from http://askubuntu.com/questions/760356/ubuntu-16-04-unity-no-desktop-just-background-wallpaper):
+-----------------------------------------------------------------------------------------------------------------------------------------
+sudo rm -fr ~/.cache/compizconfig-1
+sudo rm -fr ~/.compiz
+
+** Then try this if your session not loading :
+-----------------------------------------------
+sudo rm -fr ~/.Xauthority
+sudo rm -fr ~/.config/autostart
+
+** Reinstall compiz
+--------------------
+sudo apt-get install --reinstall ubuntu-desktop unity compizconfig-settings-manager upstart
+
+** Install CUDA 8 from this link: https://developer.nvidia.com/cuda-80-ga2-download-archive
+---------------------------------
+
+** OpenCV Setup
+----------------
+sudo apt-get install cmake cmake-qt-gui
+
+mkdir ~/code/opencv-3.1.0
+cd ~/code/opencv-3.1.0
+git clone git@github.com:daveselinger/opencv.git .
+git checkout 3.1.0-with-cuda8
+
+sudo apt install --assume-yes build-essential cmake git pkg-config unzip ffmpeg qtbase5-dev python-dev python3-dev python-numpy python3-numpy
+sudo apt install libhdf5-dev
+sudo apt install --assume-yes libgtk-3-dev libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev
+sudo apt install --assume-yes libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+sudo apt install --assume-yes libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev
+sudo apt install --assume-yes libvorbis-dev libxvidcore-dev v4l-utils
+
+cd ~/code/opencv-3.1.0
+mkdir build
+cd build
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_CUDA=ON -D WITH_CUBLAS=ON -D WITH_TBB=ON -D WITH_V4L=ON -D WITH_QT=ON -D WITH_OPENGL=ON -D BUILD_PERF_TESTS=OFF -D BUILD_TESTS=OFF -DCUDA_NVCC_FLAGS="-D_FORCE_INLINES" ..
+
+# Build!
+---------
+make -j $(($(nproc) + 1))
+sudo make install
+============================================================================
+INSTALLING OPENCV3 CUDA
+-----------------------
+You have to add the vision opencv library to the folder of the workspace too
+
+============================================================================
+SETTING UP THE CAMERA TO BE USED:
+==================================
+
+
+============================================================================
+USB CAM Packages:
+-----------------
+rosparam set usb_cam/video_device /dev/video0 (For Webcam) || /dev/video1 (For external USB camera)
+###rosrun usb_cam usb_cam_node
+roslaunch usb_cam usb_cam-test.launch
+
+** To View the Camera and Check that it is working, use this:
+rosrun image_view image_view image:=/usb_cam/image_raw
+
+============================================================================
+IMAGE_PIPELINE PACKAGE
+========================
+1- CAMERA CALIBRATION
+---------------------
+rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.025 image:=/usb_cam/image_raw camera:=/usb_cam
+
+
+2-IMAGE RECTIFICATION
+---------------------
+ROS_NAMESPACE=usb_cam rosrun image_proc image_proc
+rosrun image_view image_view image:=usb_cam/image_rect
+
+Checking the calibration
+-------------------------
+rosrun camera_calibration cameracheck.py --size 8x6 monocular:=/forearm image:=image_rect
+
+
+============================================================================
+APRIL TAG DETECTION
+====================
+roslaunch apriltag_ros continuous_detection.launch
+
+=============================================================================
+LOCALIZATION 
+=============
+rosrun apriltag_ros localization.py
+rosrun image_view image_view image:=/tag_detections_image
+
+
+

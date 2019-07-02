@@ -1,0 +1,8 @@
+prefix=/home/amr/asu_swarm_gp19/install
+
+Name: swarm_formation_19
+Description: Description of swarm_formation_19
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/amr/asu_swarm_gp19/install/lib 
+Requires: 

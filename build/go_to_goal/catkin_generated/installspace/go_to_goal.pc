@@ -1,0 +1,8 @@
+prefix=/home/amr/asu_swarm_gp19/install
+
+Name: go_to_goal
+Description: Description of go_to_goal
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/amr/asu_swarm_gp19/install/lib 
+Requires: 

@@ -1,0 +1,6 @@
+devel_space: /home/amr/asu_swarm_gp19/devel
+install: false
+install_space: /home/amr/asu_swarm_gp19/install
+profile: default
+source_space: /home/amr/asu_swarm_gp19/src
+workspace: /home/amr/asu_swarm_gp19

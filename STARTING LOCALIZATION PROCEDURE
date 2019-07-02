@@ -1,0 +1,21 @@
+1- Running the USB CAM Node
+----------------------------
+rosparam set usb_cam/video_device /dev/video1
+roslaunch usb_cam usb_cam-test.launch
+
+2- RUNNING CAMERA CALIBRATION
+-----------------------------
+rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.035 image:=/usb_cam/image_raw camera:=/usb_cam
+
+3- IMAGE RECTIFICATION
+-----------------------
+ROS_NAMESPACE=usb_cam rosrun image_proc image_proc
+
+4- APRIL TAGS DETECTION
+------------------------
+roslaunch apriltag_ros continuous_detection.launch
+rosrun image_view image_view image:=/tag_detections_image
+
+5- RUN LOCALIZATION SCRIPT
+---------------------------
+rosrun apriltag_ros localization.py

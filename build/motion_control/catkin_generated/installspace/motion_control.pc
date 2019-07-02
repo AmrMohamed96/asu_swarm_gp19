@@ -1,0 +1,8 @@
+prefix=/home/amr/asu_swarm_gp19/install
+
+Name: motion_control
+Description: Description of motion_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/amr/asu_swarm_gp19/install/lib 
+Requires: 

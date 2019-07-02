@@ -1,0 +1,7 @@
+usb_cam
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/cmake.lock /home/amr/asu_swarm_gp19/devel/./cmake.lock
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/lib/libusb_cam.so /home/amr/asu_swarm_gp19/devel/lib/libusb_cam.so
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/lib/pkgconfig/usb_cam.pc /home/amr/asu_swarm_gp19/devel/lib/pkgconfig/usb_cam.pc
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/lib/usb_cam/usb_cam_node /home/amr/asu_swarm_gp19/devel/lib/usb_cam/usb_cam_node
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake /home/amr/asu_swarm_gp19/devel/share/usb_cam/cmake/usb_camConfig-version.cmake
+/home/amr/asu_swarm_gp19/devel/.private/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake /home/amr/asu_swarm_gp19/devel/share/usb_cam/cmake/usb_camConfig.cmake

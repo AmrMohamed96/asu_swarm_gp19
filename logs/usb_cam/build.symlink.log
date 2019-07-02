@@ -1,0 +1,5 @@
+Symlinking /home/amr/asu_swarm_gp19/devel/lib/libusb_cam.so
+Symlinking /home/amr/asu_swarm_gp19/devel/lib/pkgconfig/usb_cam.pc
+Symlinking /home/amr/asu_swarm_gp19/devel/lib/usb_cam/usb_cam_node
+Symlinking /home/amr/asu_swarm_gp19/devel/share/usb_cam/cmake/usb_camConfig-version.cmake
+Symlinking /home/amr/asu_swarm_gp19/devel/share/usb_cam/cmake/usb_camConfig.cmake
