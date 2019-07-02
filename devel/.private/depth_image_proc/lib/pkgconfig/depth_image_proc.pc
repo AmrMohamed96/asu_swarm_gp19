@@ -1,0 +1,8 @@
+prefix=/home/amr/asu_swarm_gp19/devel/.private/depth_image_proc
+
+Name: depth_image_proc
+Description: Description of depth_image_proc
+Version: 1.13.0
+Cflags: -I/home/amr/asu_swarm_gp19/src/image_pipeline/depth_image_proc/include
+Libs: -L/home/amr/asu_swarm_gp19/devel/.private/depth_image_proc/lib -ldepth_image_proc
+Requires: 

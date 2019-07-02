@@ -1,0 +1,1 @@
+/home/amr/asu_swarm_gp19/devel/.private/image_publisher/lib/pkgconfig/image_publisher.pc

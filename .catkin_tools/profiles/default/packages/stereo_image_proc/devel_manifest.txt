@@ -1,0 +1,14 @@
+image_pipeline/stereo_image_proc
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/cmake.lock /home/amr/asu_swarm_gp19/devel/./cmake.lock
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/include/stereo_image_proc/DisparityConfig.h /home/amr/asu_swarm_gp19/devel/include/stereo_image_proc/DisparityConfig.h
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/libstereo_image_proc.so /home/amr/asu_swarm_gp19/devel/lib/libstereo_image_proc.so
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/stereo_image_proc/stereo_image_proc /home/amr/asu_swarm_gp19/devel/lib/stereo_image_proc/stereo_image_proc
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/pkgconfig/stereo_image_proc.pc /home/amr/asu_swarm_gp19/devel/lib/pkgconfig/stereo_image_proc.pc
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/python2.7/dist-packages/stereo_image_proc/__init__.py /home/amr/asu_swarm_gp19/devel/lib/python2.7/dist-packages/stereo_image_proc/__init__.py
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/python2.7/dist-packages/stereo_image_proc/cfg/__init__.py /home/amr/asu_swarm_gp19/devel/lib/python2.7/dist-packages/stereo_image_proc/cfg/__init__.py
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/lib/python2.7/dist-packages/stereo_image_proc/cfg/DisparityConfig.py /home/amr/asu_swarm_gp19/devel/lib/python2.7/dist-packages/stereo_image_proc/cfg/DisparityConfig.py
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/share/stereo_image_proc/cmake/stereo_image_procConfig.cmake /home/amr/asu_swarm_gp19/devel/share/stereo_image_proc/cmake/stereo_image_procConfig.cmake
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/share/stereo_image_proc/cmake/stereo_image_procConfig-version.cmake /home/amr/asu_swarm_gp19/devel/share/stereo_image_proc/cmake/stereo_image_procConfig-version.cmake
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/share/stereo_image_proc/docs/DisparityConfig.wikidoc /home/amr/asu_swarm_gp19/devel/share/stereo_image_proc/docs/DisparityConfig.wikidoc
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/share/stereo_image_proc/docs/DisparityConfig.dox /home/amr/asu_swarm_gp19/devel/share/stereo_image_proc/docs/DisparityConfig.dox
+/home/amr/asu_swarm_gp19/devel/.private/stereo_image_proc/share/stereo_image_proc/docs/DisparityConfig-usage.dox /home/amr/asu_swarm_gp19/devel/share/stereo_image_proc/docs/DisparityConfig-usage.dox

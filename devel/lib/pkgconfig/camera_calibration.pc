@@ -1,0 +1,1 @@
+/home/amr/asu_swarm_gp19/devel/.private/camera_calibration/lib/pkgconfig/camera_calibration.pc

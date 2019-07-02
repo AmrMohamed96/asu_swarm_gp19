@@ -1,0 +1,4 @@
+Symlinking /home/amr/asu_swarm_gp19/devel/lib/libdepth_image_proc.so
+Symlinking /home/amr/asu_swarm_gp19/devel/lib/pkgconfig/depth_image_proc.pc
+Symlinking /home/amr/asu_swarm_gp19/devel/share/depth_image_proc/cmake/depth_image_procConfig.cmake
+Symlinking /home/amr/asu_swarm_gp19/devel/share/depth_image_proc/cmake/depth_image_procConfig-version.cmake
