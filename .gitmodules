@@ -1,0 +1,20 @@
+[submodule "src/a_star_pathplanning"]
+	path = src/a_star_pathplanning
+	url = https://github.com/AmrMohamed96/a_star_pathplanning
+	branch = master
+[submodule "src/localization_mapping"]
+	path = src/localization_mapping
+	url = https://github.com/AmrMohamed96/localization_mapping
+	branch = master
+[submodule "src/swarm_formation_19"]
+	path = src/swarm_formation_19
+	url = https://github.com/AmrMohamed96/swarm_formation_19
+	branch = master
+[submodule "src/go_to_goal"]
+	path = src/go_to_goal
+	url = https://github.com/AmrMohamed96/go_to_goal
+	branch = master
+[submodule "src/motion_control"]
+	path = src/motion_control
+	url = https://github.com/AmrMohamed96/motion_control
+	branch = master
