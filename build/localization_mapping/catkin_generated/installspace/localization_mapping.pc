@@ -1,0 +1,8 @@
+prefix=/home/amr/asu_swarm_gp19/install
+
+Name: localization_mapping
+Description: Description of localization_mapping
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/amr/asu_swarm_gp19/install/lib 
+Requires: 
