@@ -18,3 +18,11 @@
 	path = src/motion_control
 	url = https://github.com/AmrMohamed96/motion_control
 	branch = master
+[submodule "src/dijkstra_pathplanning"]
+	path = src/dijkstra_pathplanning
+	url = https://github.com/AmrMohamed96/dijkstra_pathplanning.git
+	branch = master
+[submodule "src/path_planning"]
+	path = src/path_planning
+	url = https://github.com/AmrMohamed96/path_planning.git
+	branch = master
