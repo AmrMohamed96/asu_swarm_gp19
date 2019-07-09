@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libgtest.so -o libgtest.so CMakeFiles/gtest.dir/src/gtest-all.cc.o  -L/home/amr/asu_swarm_gp19/build/a_star_path/gtest/gtest/src -lpthread -Wl,-rpath,/home/amr/asu_swarm_gp19/build/a_star_path/gtest/gtest/src 

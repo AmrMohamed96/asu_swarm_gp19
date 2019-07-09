@@ -26,3 +26,11 @@
 	path = src/path_planning
 	url = https://github.com/AmrMohamed96/path_planning.git
 	branch = master
+[submodule "src/--force"]
+	path = src/--force
+	url = https://github.com/AmrMohamed96/a_star_path.git
+	branch = master
+[submodule "src/a_star_path"]
+	path = src/a_star_path
+	url = https://github.com/AmrMohamed96/a_star_path.git
+	branch = master
